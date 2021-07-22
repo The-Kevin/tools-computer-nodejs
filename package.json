@@ -30,6 +30,6 @@
     "url": "https://github.com/The-Kevin/tools-computer-nodejs"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "the-kevin:registry": "https://npm.pkg.github.com/"
   }
 }
