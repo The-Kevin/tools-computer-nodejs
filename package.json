@@ -1,5 +1,5 @@
 {
-  "name": "tools-computer-nodejs",
+  "name": "@the-kevin/tools-computer-nodejs",
   "version": "1.0.0",
   "description": "Application to see informations of computer",
   "main": "src/index.js",
@@ -30,6 +30,6 @@
     "url": "https://github.com/The-Kevin/tools-computer-nodejs"
   },
   "publishConfig": {
-    "the-kevin:registry": "https://npm.pkg.github.com/"
+    "@the-kevin:registry": "https://npm.pkg.github.com/"
   }
 }
