@@ -2,6 +2,7 @@ import os from 'os';
 import dns from 'dns';
 import dgram from 'dgram';
 import { BlockList } from 'net';
+import http, { ServerResponse } from 'http';
 
 export const getHostName = () => {
   return os.hostname();
@@ -55,5 +56,24 @@ export const blockAddress = (address: string) => {
 
   blockList.addAddress(address);
   if (blockList.check(address) !== true)
-    return new Error('Address not blocked');
+    return new Error('Address not blocked!');
+};
+/**
+ *
+ * @param message #string
+ * @param port #number
+ */
+export const sendHttpMessage = (message: string, port: number) => {
+  try {
+    const server = http.createServer((request, response) => {
+      request.setEncoding('utf-8');
+      request.on('end', () => {
+        response.write(message);
+        response.end();
+      });
+    });
+    server.listen(port);
+  } catch (error) {
+    return new Error('Http server not created!');
+  }
 };
