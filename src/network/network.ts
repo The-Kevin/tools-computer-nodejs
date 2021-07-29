@@ -1,8 +1,8 @@
 import os from 'os';
 import dns from 'dns';
 import dgram from 'dgram';
+import http from 'http';
 import { BlockList } from 'net';
-import http, { ServerResponse } from 'http';
 
 export const getHostName = () => {
   return os.hostname();
