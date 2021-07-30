@@ -1,6 +1,6 @@
 {
-  "name": "@the-kevin/tools-computer-nodejs",
-  "version": "1.0.0",
+  "name": "tools-computer-nodejs",
+  "version": "1.0.1",
   "description": "Application to see informations of computer",
   "main": "src/index.js",
   "scripts": {

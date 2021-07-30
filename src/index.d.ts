@@ -1,3 +1,3 @@
-import { network } from './index';
+import { network, cpu, crypto } from './index';
 
-export { network };
+export { network, cpu, crypto };
